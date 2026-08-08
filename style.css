@@ -156,7 +156,47 @@ section h2{
     margin-bottom:15px;
     font-size:18px;
 }
+#porque{
+background:#ffffff;
+padding:100px 0;
+}
 
+.beneficios{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.beneficio{
+background:white;
+padding:35px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.35s;
+}
+
+.beneficio:hover{
+transform:translateY(-10px);
+box-shadow:0 18px 35px rgba(0,0,0,.12);
+}
+
+.icono{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.beneficio h3{
+color:#0b3f8c;
+margin-bottom:15px;
+font-size:24px;
+}
+
+.beneficio p{
+font-size:17px;
+color:#555;
+}
 footer{
     background:#082752;
     color:white;
