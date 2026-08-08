@@ -38,9 +38,9 @@ header .contenedor{
 }
 
 .logo{
-    height:70px;
+    height:95px;
+    transition:0.3s;
 }
-
 nav a{
     text-decoration:none;
     color:#0b3f8c;
@@ -55,10 +55,10 @@ nav a:hover{
 .hero{
 height:100vh;
 background:
-linear-gradient(rgba(5,25,55,.65),rgba(5,25,55,.85)),
+linear-gradient(rgba(7,30,65,.50),rgba(7,30,65,.70)),
 url("hero-refrimasters.jpg");
 background-size:cover;
-background-position:center;
+background-position:left center;
 background-repeat:no-repeat;
 display:flex;
 justify-content:center;
