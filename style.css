@@ -319,6 +319,44 @@ grid-template-columns:1fr;
 }
 
 }
+#estadisticas{
+    background:#0b3f8c;
+    color:white;
+    padding:70px 0;
+}
+
+.numeros{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align:center;
+    gap:30px;
+}
+
+.numeros h2{
+    color:white;
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.numeros p{
+    font-size:18px;
+}
+
+@media(max-width:900px){
+
+.numeros{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.numeros{
+    grid-template-columns:1fr;
+}
+
+}
 footer{
     background:#082752;
     color:white;
