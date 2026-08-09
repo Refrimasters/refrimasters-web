@@ -288,6 +288,27 @@ line-height:1.7;
 }
 
 @media(max-width:768px){
+.trabajo{
+    grid-template-columns:1fr;
+    gap:30px;
+    margin-bottom:70px;
+}
+
+.trabajo-imagen img{
+    height:400px;
+}
+
+.trabajo-texto{
+    text-align:center;
+}
+
+.trabajo.invertido .trabajo-imagen{
+    order:1;
+}
+
+.trabajo.invertido .trabajo-texto{
+    order:2;
+}  
     .galeria{
         grid-template-columns:1fr;
     }
