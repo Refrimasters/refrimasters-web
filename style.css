@@ -171,6 +171,62 @@ section h2{
     margin-bottom:15px;
     font-size:18px;
 }
+.contacto-info{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    max-width:1000px;
+    margin:50px auto 0;
+}
+
+.contacto-item{
+    background:white;
+    color:#222;
+    padding:35px 25px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.contacto-item:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+}
+
+.contacto-icono{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.contacto-item h3{
+    color:#0b3f8c;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.contacto-item p{
+    color:#555;
+    font-size:16px;
+    line-height:1.7;
+}
+
+.boton-contacto{
+    display:inline-block;
+    margin-top:15px;
+    background:#2cb742;
+    color:white;
+    padding:12px 22px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.boton-contacto:hover{
+    background:#25a53a;
+    transform:translateY(-2px);
+}
 #porque{
 background:#ffffff;
 padding:100px 0;
@@ -288,6 +344,11 @@ line-height:1.7;
 }
 
 @media(max-width:768px){
+.contacto-info{
+    grid-template-columns:1fr;
+    gap:20px;
+    padding:0 15px;
+}
 .trabajo{
     grid-template-columns:1fr;
     gap:30px;
