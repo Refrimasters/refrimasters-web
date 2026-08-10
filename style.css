@@ -39,7 +39,9 @@ header .contenedor{
 }
 
 .logo{
-    height:200px;
+    height:180px;
+    width:auto;
+    display:block;
     transition:0.3s;
 }
 nav a{
@@ -629,8 +631,10 @@ font-size:36px;
 font-size:18px;
 }
 
-.logo{
-height:200px;
+.logo {
+    height:180px;
+    width:auto;
+    display:block;
 }
 
 }
