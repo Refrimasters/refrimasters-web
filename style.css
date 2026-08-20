@@ -823,3 +823,251 @@ font-size:18px;
     }
 
 }
+/* =========================================
+   CONTACTO - DISEÑO PROFESIONAL
+   ========================================= */
+
+.contacto-encabezado{
+    background:#12468f;
+    color:white;
+    text-align:center;
+    padding:55px 20px 35px;
+}
+
+.contacto-encabezado h2{
+    color:white;
+    font-size:42px;
+    margin:0 0 10px;
+}
+
+.contacto-encabezado p{
+    color:white;
+    font-size:18px;
+    margin:6px 0;
+}
+
+.contacto-linea{
+    width:50px;
+    height:3px;
+    background:#29a9ff;
+    margin:15px auto 18px;
+}
+
+
+/* CONTENEDOR */
+
+.contacto-contenido{
+    padding:35px 0 45px;
+}
+
+
+/* TARJETAS */
+
+.contacto-tarjetas{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:32px;
+    align-items:stretch;
+}
+
+.contacto-tarjeta{
+    background:white;
+    border-radius:15px;
+    padding:25px 28px 30px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.contacto-tarjeta h3{
+    color:#12468f;
+    font-size:24px;
+    margin:12px 0 10px;
+}
+
+.contacto-tarjeta p{
+    color:#444;
+    font-size:16px;
+    line-height:1.7;
+    margin:10px 0;
+}
+
+
+/* ICONOS */
+
+.contacto-icono{
+    width:64px;
+    height:64px;
+    margin:0 auto 12px;
+    border-radius:50%;
+    background:#12468f;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.contacto-icono svg{
+    width:32px !important;
+    height:32px !important;
+    max-width:32px !important;
+    max-height:32px !important;
+    display:block;
+    fill:none;
+    stroke:white;
+    stroke-width:1.8;
+}
+
+
+/* LINEA DEBAJO DEL TITULO */
+
+.contacto-linea-card{
+    width:50px;
+    height:2px;
+    background:#247cff;
+    margin:0 auto 18px;
+}
+
+
+/* WHATSAPP */
+
+.boton-whatsapp{
+    display:inline-block;
+    background:#12468f;
+    color:white;
+    text-decoration:none;
+    font-weight:700;
+    padding:13px 25px;
+    border-radius:8px;
+    margin-top:12px;
+    transition:.3s;
+}
+
+.boton-whatsapp:hover{
+    background:#0b3772;
+}
+
+.texto-boton{
+    display:block;
+    color:#555;
+    margin-top:12px;
+    font-size:14px;
+}
+
+
+/* CORREO */
+
+.correo-separador{
+    height:1px;
+    background:#ddd;
+    margin:25px 0;
+}
+
+
+/* ASESORIA */
+
+.contacto-asesoria{
+    margin-top:25px;
+    background:#eef5fc;
+    border:1px solid #dce8f5;
+    border-radius:15px;
+    padding:25px 35px;
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.asesoria-icono{
+    width:70px;
+    min-width:70px;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.asesoria-icono svg{
+    width:55px !important;
+    height:55px !important;
+    max-width:55px !important;
+    max-height:55px !important;
+    display:block;
+    fill:none;
+    stroke:#12468f;
+    stroke-width:1.7;
+}
+
+.asesoria-texto{
+    flex:1;
+}
+
+.asesoria-texto h3{
+    color:#12468f;
+    font-size:24px;
+    margin:0 0 5px;
+}
+
+.asesoria-texto p{
+    color:#444;
+    font-size:17px;
+    margin:0;
+    line-height:1.5;
+}
+
+.boton-asesoria{
+    display:inline-flex;
+    align-items:center;
+    gap:18px;
+    padding:13px 25px;
+    border:2px solid #12468f;
+    border-radius:8px;
+    color:#12468f;
+    background:white;
+    text-decoration:none;
+    font-weight:700;
+    white-space:nowrap;
+    transition:.3s;
+}
+
+.boton-asesoria span{
+    font-size:25px;
+    line-height:1;
+}
+
+.boton-asesoria:hover{
+    background:#12468f;
+    color:white;
+}
+
+
+/* =========================================
+   CORRECCIÓN PARA EVITAR SVG GIGANTES
+   ========================================= */
+
+.contacto-icono svg,
+.asesoria-icono svg{
+    position:static !important;
+    transform:none !important;
+}
+
+
+/* CELULAR */
+
+@media (max-width:800px){
+
+    .contacto-tarjetas{
+        grid-template-columns:1fr;
+    }
+
+    .contacto-asesoria{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .boton-asesoria{
+        white-space:normal;
+    }
+
+    .contacto-encabezado h2{
+        font-size:34px;
+    }
+
+}
